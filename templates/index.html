@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Nigeria</title>
+{%  endblock %}
+
+{% block body %}
+<div class="container">
+<div class="names">
+<h2>Nigerian delegate's 2023 Election</h2>
+<p> Make Selection By a TAP👇😁
+</div>
+{% if user %}
+<div class="display">{{user}}</div>
+{% endif %}
+<div class="form">
+<form action="/" methods="post">
+<select class= "text" name = "choice">
+<option disable ></option>
+<option value=" THIS IS OUR CHOICE LEADER NAMED   
+ 'PETER OBI' "name= "choice">Peter obi</option>
+<option value="WE DON'T KNOW HIM, VOTE FOR 'PETER OBI' GO get your PVC" name= "choice">Atiku Abubakar</option>
+<option value = "WE DON'T KNOW HIM, VOTE FOR 'PETER OBI' GO get your PVC" name="choice">Tinubu Ahmed</option>
+</select>
+<input type="submit" value="Proceed" class="btn">
+</form>
+
+</div>
+<div class="about">
+<p style= "font-size: 10px">Copyright 2022 all reserved. <a href="/about">About</a></p>
+</div>
+</div>
+{%  endblock%}
